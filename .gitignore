@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 /.idea/
 /argo-core/argo-core.iml
+/argo-core/target/
+/argo-example/target/

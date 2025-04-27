@@ -19,6 +19,7 @@
 
     <modules>
         <module>argo-core</module>
+        <module>argo-example</module>
     </modules>
 
     <dependencyManagement>
