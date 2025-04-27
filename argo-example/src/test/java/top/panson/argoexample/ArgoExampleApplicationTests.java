@@ -1,10 +1,10 @@
-package top.panson.argocore;
+package top.panson.argoexample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ArgoCoreApplicationTests {
+class ArgoExampleApplicationTests {
 
     @Test
     void contextLoads() {

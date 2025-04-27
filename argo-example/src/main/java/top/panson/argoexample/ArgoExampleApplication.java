@@ -1,13 +1,13 @@
-package top.panson.argocore;
+package top.panson.argoexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ArgoCoreApplication {
+public class ArgoExampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ArgoCoreApplication.class, args);
+        SpringApplication.run(ArgoExampleApplication.class, args);
     }
 
 }
