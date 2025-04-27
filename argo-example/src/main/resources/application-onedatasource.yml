@@ -7,19 +7,15 @@ spring:
     hikari:
       connection-timeout: 3000
 
-ruyuan:
-  tend:
-    consistency:
-      parallel:
-        pool:
-          thread-max-pool-size: 6
-          thread-core-pool-size: 6
-          thread-pool-keep-alive-time: 60
-          thread-pool-keep-alive-time-unit: SECONDS
-          thread-pool-queue-size: 200
-          # 框架自身有默认的实现类 来扫描查询任务的开始时间以及结束时间，这里给出定制化的实现类
-          #task-schedule-time-range-class-name: com.ruyuan.eshop.range.MyTaskTimeRangeQuery
-      action:
-        fail-count-threshold: 0
-      shard:
-        task-sharded: false
+argo:
+  parallel:
+    pool:
+      thread-max-pool-size: 6
+      thread-core-pool-size: 6
+      thread-pool-keep-alive-time: 60
+      thread-pool-keep-alive-time-unit: SECONDS
+      thread-pool-queue-size: 200
+  action:
+    fail-count-threshold: 0
+  shard:
+    task-sharded: false

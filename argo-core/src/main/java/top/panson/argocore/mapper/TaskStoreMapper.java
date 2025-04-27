@@ -17,7 +17,7 @@ public interface TaskStoreMapper {
      * @param consistencyTaskInstance 要存储的最终一致性任务的实例信息
      * @return 存储结果
      */
-    @Insert("INSERT INTO ruyuan_tend_consistency_task("
+    @Insert("INSERT INTO argo_task("
                 + "task_id,"
                 + "task_status,"
                 + "execute_times,"
@@ -76,7 +76,7 @@ public interface TaskStoreMapper {
             "thread_way, error_msg, alert_expression, " +
             "alert_action_bean_name, fallback_class_name, fallback_error_msg,shard_key," +
             "gmt_create, gmt_modified " +
-            "FROM ruyuan_tend_consistency_task " +
+            "FROM argo_task " +
             "where " +
             "id = #{id} AND shard_key = #{shardKey}")
     @Results({
@@ -119,7 +119,7 @@ public interface TaskStoreMapper {
             "thread_way, error_msg, alert_expression, " +
             "alert_action_bean_name, fallback_class_name, fallback_error_msg,shard_key," +
             "gmt_create, gmt_modified " +
-            "FROM ruyuan_tend_consistency_task " +
+            "FROM argo_task " +
             "WHERE " +
             "task_status <= 2 " +
             "AND execute_time>=#{startTime} AND execute_time<=#{endTime} " +
@@ -157,7 +157,7 @@ public interface TaskStoreMapper {
      * @return 启动任务的结果
      */
     @Update("UPDATE "
-            + "ruyuan_tend_consistency_task "
+            + "argo_task "
             + "SET "
             + "task_status=#{taskStatus},"
             + "execute_times=execute_times+1,"
@@ -172,7 +172,7 @@ public interface TaskStoreMapper {
      * @param taskInstance 一致性任务实例信息
      * @return 标记结果
      */
-    @Delete("DELETE FROM ruyuan_tend_consistency_task WHERE id=#{id} and shard_key=#{shardKey}")
+    @Delete("DELETE FROM argo_task WHERE id=#{id} and shard_key=#{shardKey}")
     int markSuccess(ConsistencyTaskInstance taskInstance);
 
     /**
@@ -181,7 +181,7 @@ public interface TaskStoreMapper {
      * @param taskInstance 一致性任务实例信息
      * @return 标记结果
      */
-    @Update("UPDATE ruyuan_tend_consistency_task SET task_status=2, error_msg=#{errorMsg}, execute_time=#{executeTime} WHERE id=#{id} and shard_key=#{shardKey}")
+    @Update("UPDATE argo_task SET task_status=2, error_msg=#{errorMsg}, execute_time=#{executeTime} WHERE id=#{id} and shard_key=#{shardKey}")
     int markFail(ConsistencyTaskInstance taskInstance);
 
     /**
@@ -190,7 +190,7 @@ public interface TaskStoreMapper {
      * @param taskInstance 一致性任务实例
      * @return 标记结果
      */
-    @Update("UPDATE ruyuan_tend_consistency_task SET fallback_error_msg=#{fallbackErrorMsg} WHERE id=#{id} and shard_key=#{shardKey}")
+    @Update("UPDATE argo_task SET fallback_error_msg=#{fallbackErrorMsg} WHERE id=#{id} and shard_key=#{shardKey}")
     int markFallbackFail(ConsistencyTaskInstance taskInstance);
 
 }
