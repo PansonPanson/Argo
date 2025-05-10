@@ -178,8 +178,8 @@ public class TaskStoreServiceImpl implements TaskStoreService {
     @Transactional(rollbackFor = Exception.class)
     @Override
     public int markSuccess(ConsistencyTaskInstance consistencyTaskInstance) {
-//        return taskStoreMapper.markSuccess(consistencyTaskInstance);
-        return 1;
+        return taskStoreMapper.markSuccess(consistencyTaskInstance);
+//        return 1;
     }
 
     /**
@@ -191,8 +191,8 @@ public class TaskStoreServiceImpl implements TaskStoreService {
     @Transactional(rollbackFor = Exception.class)
     @Override
     public int markFail(ConsistencyTaskInstance consistencyTaskInstance) {
-//        return taskStoreMapper.markFail(consistencyTaskInstance);
-        return 1;
+        return taskStoreMapper.markFail(consistencyTaskInstance);
+//        return 1;
     }
 
     /**
