@@ -3,5 +3,6 @@ Argo 是一款基于Java实现的最终一致性组件，主要用于处理分�
 通过 SpringAOP ，将任务保存到数据库中，然后从数据库中读取任务来执⾏。
 核心目的：代码中保证“某个操作(Action)”最终⼀定可以执⾏成功。
 执行流程图：
-![img.png](doc/image/img.png)
+![img.png](doc/image/流程设计.png)
 
+![img.png](doc/image/img.png)
