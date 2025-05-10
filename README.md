@@ -6,4 +6,3 @@ Argo 是一款基于Java实现的最终一致性组件，主要用于处理分�
 ![img.png](doc/image/流程设计.png)
 
 
-![img_2.png](https://github.com/PansonPanson/Argo/blob/main/doc/image/%E6%9C%80%E7%BB%88%E4%B8%80%E8%87%B4%E6%80%A7%E7%BB%84%E4%BB%B6.png?raw=true)
