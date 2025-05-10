@@ -2,20 +2,21 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/task-engine?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
     username: root
-    password: Pan_1900
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       connection-timeout: 3000
-
-argo:
-  parallel:
-    pool:
-      thread-max-pool-size: 6
-      thread-core-pool-size: 6
-      thread-pool-keep-alive-time: 60
-      thread-pool-keep-alive-time-unit: SECONDS
-      thread-pool-queue-size: 200
-  action:
-    fail-count-threshold: 0
-  shard:
-    task-sharded: false
+top:
+  panson:
+    argo:
+      parallel:
+        pool:
+          thread-max-pool-size: 6
+          thread-core-pool-size: 6
+          thread-pool-keep-alive-time: 60
+          thread-pool-keep-alive-time-unit: SECONDS
+          thread-pool-queue-size: 200
+      action:
+        fail-count-threshold: 0
+      shard:
+        task-sharded: false
