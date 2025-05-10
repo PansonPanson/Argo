@@ -1,4 +1,4 @@
-package top.panson.argoexample.order;
+package top.panson.argo.example.order;
 
 import lombok.Builder;
 import lombok.Data;

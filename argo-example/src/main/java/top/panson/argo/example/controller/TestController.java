@@ -1,9 +1,9 @@
-package top.panson.argoexample.controller;
+package top.panson.argo.example.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.panson.argoexample.order.OrderInfoDTO;
-import top.panson.argoexample.order.SendMessageComponent;
+import top.panson.argo.example.order.OrderInfoDTO;
+import top.panson.argo.example.order.SendMessageComponent;
 
 import javax.annotation.Resource;
 

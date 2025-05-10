@@ -1,8 +1,8 @@
-package top.panson.argoexample.fail;
+package top.panson.argo.example.fail;
 
 import cn.hutool.json.JSONUtil;
 import org.springframework.stereotype.Component;
-import top.panson.argoexample.order.OrderInfoDTO;
+import top.panson.argo.example.order.OrderInfoDTO;
 
 /**
  * 自定义降级类

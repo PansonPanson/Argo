@@ -1,4 +1,4 @@
-package top.panson.argoexample.range;
+package top.panson.argo.example.range;
 
 
 import org.springframework.stereotype.Component;

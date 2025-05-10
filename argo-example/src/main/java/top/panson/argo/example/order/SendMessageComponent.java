@@ -1,4 +1,4 @@
-package top.panson.argoexample.order;
+package top.panson.argo.example.order;
 
 import cn.hutool.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import top.panson.argo.annotation.ConsistencyTask;
 import top.panson.argo.enums.PerformanceEnum;
 import top.panson.argo.enums.ThreadWayEnum;
-import top.panson.argoexample.fail.SendMessageFallbackHandler;
+import top.panson.argo.example.fail.SendMessageFallbackHandler;
 
 /**
  * 发送消息的组件

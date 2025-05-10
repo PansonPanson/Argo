@@ -1,4 +1,4 @@
-package top.panson.argoexample.alertm;
+package top.panson.argo.example.alertm;
 
 
 import org.springframework.stereotype.Component;
