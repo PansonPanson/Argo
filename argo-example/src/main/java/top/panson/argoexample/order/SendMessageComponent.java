@@ -63,7 +63,7 @@ public class SendMessageComponent {
             performanceWay = PerformanceEnum.PERFORMANCE_RIGHT_NOW,
             threadWay = ThreadWayEnum.ASYNC,
             fallbackClass = SendMessageFallbackHandler.class,
-            alertActionBeanName = "normalAlerter" // normalAlerter就是 com.ruyuan.eshop.alertm.NormalAlerter类在spring容器中的beanName
+            alertActionBeanName = "normalAlerter" // normalAlerter就是 top.panson.argoexample.alertm.NormalAlerter类在spring容器中的beanName
     )
     // 立即执行，但是必须要延迟5s钟后再立即执行 -> 单凭你的参数来看，是不对的，延迟5s，但是其实你的设置delayTime是无效的
     // 执行的时候，还必须是Async异步模式来进行执行

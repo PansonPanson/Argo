@@ -14,7 +14,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ConfigurationProperties(prefix = "ruyuan.tend.consistency.parallel.pool")
+@ConfigurationProperties(prefix = "top.panson.argo.parallel.pool")
 public class TendConsistencyParallelTaskConfigProperties {
 
     /**
@@ -38,7 +38,7 @@ public class TendConsistencyParallelTaskConfigProperties {
      */
     public String threadPoolKeepAliveTimeUnit = "SECONDS";
     /**
-     * 这里要配置类型全路径且类要实现com.ruyuan.consistency.custom.query.TaskTimeRangeQuery接口 如：com.xxx.TaskTimeLineQuery
+     * 这里要配置类型全路径且类要实现 top.panson.argo.custom.query.TaskTimeRangeQuery接口 如：com.xxx.TaskTimeLineQuery
      */
     private String taskScheduleTimeRangeClassName = "";
 

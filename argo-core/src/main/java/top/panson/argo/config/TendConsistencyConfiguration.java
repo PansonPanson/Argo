@@ -44,11 +44,11 @@ public class TendConsistencyConfiguration {
      */
     public Boolean taskSharded = false;
     /**
-     * 这里要配置类型全路径且类要实现com.ruyuan.consistency.query.TaskTimeRangeQuery接口 如：com.xxx.TaskTimeLineQuery
+     * 这里要配置类型全路径且类要实现 top.panson.argo.query.TaskTimeRangeQuery接口 如：com.xxx.TaskTimeLineQuery
      */
     private String taskScheduleTimeRangeClassName = "";
     /**
-     * 生成任务表分片key的ClassName 这里要配置类型全路径且类要实现com.ruyuan.consistency.custom.shard.ShardingKeyGenerator接口
+     * 生成任务表分片key的ClassName 这里要配置类型全路径且类要实现 top.panson.argo.custom.shard.ShardingKeyGenerator接口
      */
     private String shardingKeyGeneratorClassName = "";
 
